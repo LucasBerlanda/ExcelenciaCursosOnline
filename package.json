@@ -1,0 +1,14 @@
+{
+    "name": "excelenciacursosonline",
+    "description": "description",
+    "authors": "Lucas Berlanda",
+    "version": "1.0.0",
+    "main": "app.js",
+    "devDependencies": {
+        "nodemon": "2.0.4"
+    },
+    "scripts": {
+        "dev": "nodemon app.js",
+        "start": "node app.js"
+    }
+}
