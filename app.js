@@ -30,8 +30,4 @@ const path = require("path")
 //rotas
 app.use('/', index)
 
-//outros
-const PORT = 8080
-app.listen(PORT,() =>{
-    console.log("Server runing!")
-})
+app.listen(process.env.PORT || 8080);
