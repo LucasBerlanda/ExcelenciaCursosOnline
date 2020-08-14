@@ -3,11 +3,12 @@ const express = require("express")
 const html = require("html")
 const bodyParser = require("body-parser")
 const app = express()
+
+// modulos referentes à rotas
 const index = require("./routes/index")
+const privacy = require("./routes/privacy")
+
 const path = require("path")
-
-
-//const mongoose = require('mongoose')
 
 //configurações
     // Body-parser
@@ -25,5 +26,6 @@ const path = require("path")
 
 //rotas
 app.use('/', index)
+app.use('/privacy', privacy)
 
 app.listen(process.env.PORT || 8080);
